@@ -26,7 +26,7 @@ export default function SliderBasic() {
           <Button>Crear una cuenta</Button>
         </Info>
         <Img>
-          <img src="/img01.png" />
+          <Image src="/img01.png" alt="" width={1920} height={1080} />
         </Img>
       </Slide>
       <Slide>
@@ -39,7 +39,7 @@ export default function SliderBasic() {
           <Button>Crear una cuenta</Button>
         </Info>
         <Img>
-          <img src="/img02.png" />
+          <Image src="/img02.png" alt="" width={1920} height={1080} />
         </Img>
       </Slide>
       <Slide>
@@ -52,7 +52,7 @@ export default function SliderBasic() {
           <Button>Crear una cuenta</Button>
         </Info>
         <Img>
-          <img src="/img03.png" />
+          <Image src="/img03.png" alt="" width={1920} height={1080} />
         </Img>
       </Slide>
     </Slider>
@@ -78,6 +78,10 @@ const Description = styled.p`
 
 const Info = styled.div`
   flex: 0.5;
+
+  @media (max-width: 900px) {
+    text-align: center;
+  }
 `;
 
 const Img = styled.div`
@@ -89,7 +93,7 @@ const Img = styled.div`
   }
 `;
 
-const Button = styled.button`
+export const Button = styled.button`
   padding: 16px;
   background: #1a73e8;
   color: #fff;

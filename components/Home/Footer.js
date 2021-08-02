@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Link from "next/link";
+import HelpIcon from "@material-ui/icons/Help";
 
 export default function Footer() {
   return (
@@ -27,6 +28,7 @@ export default function Footer() {
         </Link>
       </CenterSide>
       <RightSide>
+        <HelpIcon />
         <Link href="#">
           <a>Ayuda</a>
         </Link>
@@ -39,6 +41,7 @@ const FooterContainer = styled.div`
   display: flex;
   padding: 30px 80px;
   background: #f8f9fa;
+  align-items: center;
 
   a {
     font-size: 14px;
@@ -49,7 +52,7 @@ const FooterContainer = styled.div`
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     width: 100%;
     display: inline-block;
   }
@@ -57,6 +60,10 @@ const FooterContainer = styled.div`
 
 const LeftSide = styled.div`
   flex: 0.1;
+
+  @media (max-width: 900px) {
+    padding: 20px 0;
+  }
 `;
 
 const CenterSide = styled.div`
@@ -65,8 +72,22 @@ const CenterSide = styled.div`
   a {
     margin-right: 10px;
   }
+
+  @media (max-width: 900px) {
+    padding: 20px 0;
+  }
 `;
 
 const RightSide = styled.div`
   flex: 0.2;
+  display: flex;
+  align-items: center;
+
+  a {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 900px) {
+    padding: 20px 0;
+  }
 `;

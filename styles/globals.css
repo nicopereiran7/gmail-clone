@@ -23,3 +23,9 @@ a {
   padding: 100px;
   background-color: #fafafa;
 }
+
+@media (max-width: 900px) {
+  .SliderBasic__Slide-sc-13z0mf0-0 {
+    display: inline-block !important;
+  }
+}

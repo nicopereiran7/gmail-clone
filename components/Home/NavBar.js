@@ -2,7 +2,24 @@ import styled from "styled-components";
 import Link from "next/link";
 import Image from "next/image";
 
+import firebase from "firebase/app";
+import "firebase/auth";
+
+const provider = new firebase.auth.GoogleAuthProvider();
+
 export default function NavBar() {
+  const handleAuth = async () => {
+    firebase
+      .auth()
+      .signInWithPopup(provider)
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  };
+
   return (
     <MenuTop>
       <LogoBar>
@@ -17,9 +34,7 @@ export default function NavBar() {
         <Link href="/">
           <a>Para el trabajo</a>
         </Link>
-        <Link href="/">
-          <a>Iniciar Sesion</a>
-        </Link>
+        <SignIn onClick={handleAuth}>Iniciar Sesion</SignIn>
         <Link href="/">
           <a>
             <Button>Crear una Cuenta</Button>
@@ -63,6 +78,7 @@ const LogoImage = styled.div``;
 
 const LogoName = styled.div`
   margin-left: 6px;
+
   span {
     font-size: 26px;
     font-weight: 400;
@@ -77,7 +93,7 @@ const MenuBar = styled.div`
 `;
 
 const Button = styled.button`
-  padding: 16px;
+  padding: 14px;
   background: #1a73e8;
   color: #fff;
   border: none;
@@ -88,5 +104,17 @@ const Button = styled.button`
   &:hover {
     cursor: pointer;
     background: #003d7c;
+  }
+`;
+
+const SignIn = styled.button`
+  margin-left: 50px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: #5f6368;
+
+  &:hover {
+    cursor: pointer;
   }
 `;
