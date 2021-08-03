@@ -1,11 +1,15 @@
-@import "slick-carousel/slick/slick.css";
-@import "slick-carousel/slick/slick-theme.css";
+html {
+  scroll-behavior: smooth;
+}
 
-html,
 body {
   padding: 0;
   margin: 0;
   font-family: "Google Sans", Roboto, Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
@@ -13,15 +17,15 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 .SliderBasic__Slide-sc-13z0mf0-0 {
   display: flex !important;
-  padding: 100px;
+  padding: 100px 60px !important;
   background-color: #fafafa;
+}
+
+.SliderBasic__Wrap-sc-13z0mf0-1 {
+  display: flex !important;
+  padding: 60px 100px;
 }
 
 @media (max-width: 900px) {
