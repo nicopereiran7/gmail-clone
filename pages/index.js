@@ -37,8 +37,12 @@ export default function Home() {
 const Container = styled.div`
   text-align: center;
   padding: 50px;
-  padding-bottom: 0;
   background: #fff;
+  box-shadow: 0 4px 6px 0 rgb(0 0 0 / 12%), inset 0 -1px 0 0 #dadce0;
+
+  h1 {
+    font-weight: 700;
+  }
 
   .btn {
     margin-top: 30px;
