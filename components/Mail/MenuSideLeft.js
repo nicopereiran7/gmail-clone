@@ -18,7 +18,7 @@ export default function MenuSideLeft() {
         </Redactar>
       </Header>
       <Mails>
-        <Link href="#">
+        <Link href="/mail/inbox">
           <a>
             <MailLink>
               <AirplayIcon fontSize="small" />
@@ -26,7 +26,7 @@ export default function MenuSideLeft() {
             </MailLink>
           </a>
         </Link>
-        <Link href="#">
+        <Link href="/mail/starred">
           <a>
             <MailLink>
               <StarIcon fontSize="small" />

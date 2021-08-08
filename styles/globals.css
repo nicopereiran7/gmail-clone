@@ -1,11 +1,11 @@
-html {
-  scroll-behavior: smooth;
-}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Google Sans", Roboto, Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", serif, "Google Sans", Roboto, Arial, Helvetica,
+    sans-serif;
 }
 
 * {
@@ -29,7 +29,7 @@ a {
 }
 
 @media (max-width: 900px) {
-  .SliderBasic__Slide-sc-13z0mf0-0 {
+  .SliderBasic__Wrap-sc-13z0mf0-1 {
     display: inline-block !important;
   }
 }

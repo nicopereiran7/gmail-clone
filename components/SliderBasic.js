@@ -109,7 +109,7 @@ const Info = styled.div`
 
 const Title = styled.h1`
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 700;
 `;
 
 const Description = styled.p`
@@ -125,6 +125,13 @@ const Img = styled.div`
   img {
     width: 80%;
     object-fit: cover;
+    margin: auto;
+  }
+
+  @media (max-width: 900px) {
+    display: grid;
+    margin: auto;
+    margin-top: 20px;
   }
 `;
 
