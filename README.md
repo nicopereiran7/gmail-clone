@@ -1,5 +1,5 @@
 ## PREVIEW
-![gmail-clone01](https://user-images.githubusercontent.com/37352018/129493718-6fe8e737-0e6d-4ee1-9004-3691240a778b.PNG)
+![gmail-clone01](https://user-images.githubusercontent.com/37352018/129493776-426526f9-e21a-4c8a-a7fe-f6031b696370.PNG)
 ![gmail-clone02](https://user-images.githubusercontent.com/37352018/129493725-e5b85dd2-9075-4800-a40d-c67744fed4da.PNG)
 ![gmail-clone03](https://user-images.githubusercontent.com/37352018/129493727-310cc132-fd97-4ee9-a35a-208edbefc454.PNG)
 
